@@ -1,3 +1,9 @@
 <div class="container">
-  <div class="advice-terminal"><div class="advice">Hi</div></div>
+  <div class="advice-terminal">
+    <div class="advice">#{{ id }}</div>
+    <div class="advice">
+      <span>{{ advice }}</span>
+      <button class="btn" (click)="getAdvice()">Get new advice</button>
+    </div>
+  </div>
 </div>
