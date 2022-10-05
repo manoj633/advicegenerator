@@ -145,3 +145,68 @@
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
 }
+
+.loading, .error-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-container {
+  background: url(../assets/high-five-fail.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mask {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.306);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.fivehundread {
+  display: block;
+  font-size: 100px;
+  font-weight: bold;
+  margin: 25px;
+}
+
+.error1 {
+  font-size: 2rem;
+  margin: 10px;
+  text-align: center;
+}
+
+.error2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.error-image {
+  width: 30%;
+}
+
+.mask button {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  color: #000;
+}
+
+.mask button:hover {
+  background-color: rgb(128, 127, 127);
+  color: white;
+}

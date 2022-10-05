@@ -1,11 +1,28 @@
-<div class="container">
+<div class="container" *ngIf="advice$ | async as advice; else loadingOrError">
   <div class="advice-terminal">
-    <div class="advice">#{{ id }}</div>
+    <div class="advice">#{{ advice.slip.id }}</div>
     <div class="advice-container">
-      <span class="advice">{{ advice }}</span>
+      <span class="advice">{{ advice.slip.advice }}</span>
     </div>
     <button class="btn glow-on-hover" (click)="getAdvice()">
       Get new advice
     </button>
   </div>
 </div>
+<ng-template #loadingOrError>
+  <div *ngIf="loadingError$ | async; else loading">
+    <div class="error-container">
+      <div class="mask">
+        <span class="fivehundread">500</span>
+        <span class="error1">We're sorry, Something went wrong.</span>
+        <span class="error2">Sometimes weird things happen.</span>
+        <button (click)="onReload()">Try again!</button>
+      </div>
+    </div>
+  </div>
+</ng-template>
+<ng-template #loading>
+  <div class="loading">
+    <img src="../assets/loading.gif" />
+  </div>
+</ng-template>
