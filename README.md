@@ -1,4 +1,4 @@
-# RecipeBook
+# Advice generator
 
 
 <a href="https://github.com/manoj633/advicegenerator/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/manoj633/advicegenerator?style=for-the-badge"></a>
