@@ -1,7 +1,7 @@
 # RecipeBook
 
 
-<a href="https://github.com/manoj633/recipe-book/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/manoj633/advicegenerator?style=for-the-badge"></a>
+<a href="https://github.com/manoj633/advicegenerator/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/manoj633/advicegenerator?style=for-the-badge"></a>
 ![Repository Size](https://img.shields.io/github/repo-size/manoj633/advicegenerator?style=for-the-badge)
 ![Lines of Codes](https://img.shields.io/tokei/lines/github.com/manoj633/advicegenerator?style=for-the-badge)
 
