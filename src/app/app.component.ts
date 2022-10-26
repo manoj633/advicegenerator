@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { catchError, Observable, of, Subject } from 'rxjs';
+import { ImageService } from './image.service';
 import { AdviceService } from './services/advice.service';
 
 @Component({
@@ -14,12 +15,13 @@ export class AppComponent implements OnInit {
   advice$?: Observable<any>;
   loadingError$ = new Subject<boolean>();
 
-  constructor(private adviceService: AdviceService) {
+  constructor(private adviceService: AdviceService, private imageService: ImageService) {
 
   }
 
   ngOnInit(): void {
     this.getAdvice();
+    this.imageService.preloadImage('../assets/high-five-fail.gif');
   }
 
   getAdvice() {
